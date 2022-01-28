@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+:root {
+    --header-height: 9rem;
+  
+    /*Colors */
+    --first-color: hsl(257, 40%, 49%);
+    --first-color-alt: hsl(300, 69%, 71%);
+    --text-color: #fff;
+  
+    /* Typography*/
+    --body-font: "Poppins", sans-serif;
+    --header-font: "Open Sans", sans-serif;
+    --biggest-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.818rem;
+    --smaller-font-size: 0.75rem;
+  
+    /*Font Weight*/
+    --font-medium: 400;
+    --font-semi-bold: 600;
+  }
+  
+  /*Responsive Typography */
+  @media screen and (min-width: 992px) {
+    :root {
+      --biggest-font-size: 4rem;
+      --h1-font-size: 2.25rem;
+      --normal-font-size: 1rem;
+      --small-font-size: 0.875rem;
+      --smaller-font-size: 0.813rem;
+    }
+  }
+  
+  /*LAYOUT */
+  .container {
+    max-width: 1200px;
+    padding: 3% 5%;
+    margin: 0 auto;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .container {
+      max-width: 100%;
+      padding: 1.5rem;
+    }
+    .flex {
+      flex-wrap: wrap;
+    }
+  }
+  
+  /*Base */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: var(--first-color);
+    background-image: url("./imgs/bg-hero-desktop.svg");
+    color: var(--text-color);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+  
+  h1 {
+    font-family: var(--header-font);
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-semi-bold);
+  }
+  
+  p {
+    font-family: var(--body-font);
+    font-weight: var(--font-medium);
+  }
+  
+  button {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+  }
+  
+  /* Header*/
+  .header {
+    height: var(--header-height);
+  }
+  
+  .header_logo-img {
+    width: 20%;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .header_logo-img {
+      width: 50%;
+    }
+  }
+  
+  /*Main*/
+  .container {
+    max-width: 1200px;
+    padding: 3% 5%;
+    margin: 0 auto;
+}
+  
+  .container_img {
+    width: 60%;
+  }
+  
+  .container_img img {
+    width: 100%;
+    margin: 0.75rem auto;
+  }
+  
+  .container_text {
+    width: 40%;
+    padding-left: 3.25rem;
+  }
+  
+  .container_text-title {
+    padding-top: 3.25rem;
+  }
+  
+  .container_text-subtitle {
+    margin-top: 2.5rem;
+    text-align: justify;
+    font-size: var(--small-font-size);
+  }
+  
+  @media screen and (max-width: 992px) {
+    .container_img {
+      min-width: 100%;
+    }
+    .container_text {
+      text-align: center;
+      padding: 1rem;
+      min-width: 100%;
+    }
+  }
+  
+ 
+  
+  .button {
+    display: inline-block;
+    background-color: #fff;
+    color: var(--first-color);
+    padding: 0.75rem 3.5rem;
+    border-radius: 2rem;
+    transition: 0.3s;
+    margin-top: 1.75rem;
+  }
+  
+  .button--ghost {
+    border: none;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.58);
+  }
+  
+  .button:hover {
+    background-color: var(--first-color-alt);
+    color: var(--text-color);
+    cursor: pointer;
+  }
+  
+ 
+  .footer {
+    font-size: var(--h1-font-size);
+  }
+  
+  .attribution{
+    font-size: var(--normal-font-size);
+    text-align: center;
+    color: var(--text-color);
+  }
+  
+  .attribution a{
+    color: var(--first-color-alt);
+  }
+  
+  .footer_socials {
+    justify-content: flex-end;
+    column-gap: 0.75rem;
+  }
+  
+  
+  ion-icon {
+    color: var(--text-color);
+  }
+  
+  @media screen and (max-width: 992px) {
+    .footer_socials {
+      justify-content: center;
+    }
+  }
+
+  
